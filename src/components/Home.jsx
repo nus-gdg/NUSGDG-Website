@@ -1,9 +1,9 @@
 import React from "react";
-import background from "../images/background.png";
+//import background from "../images/background.png";
 
 function Home() {
   return (
-    <div className="home" style = {{'paddingTop' : '20px', 'paddingBottom' : '100px'}}>
+    <div className="home">
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
