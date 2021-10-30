@@ -2,6 +2,7 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import logo from "../images/nusgdg_white_text_transparent_bg.png";
 import styled from 'styled-components'
+
 const MenuDiv = styled.div`
   padding-bottom : 20px;
 `
