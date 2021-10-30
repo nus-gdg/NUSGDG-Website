@@ -5,7 +5,7 @@ import logo from "../images/nusgdg_white_text_transparent_bg.png";
 function Header(props) {
   return (
     <div className="navigation">
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
         <div class="container">
           <Link class="navbar-brand" to="/" style={{ textDecoration: "none" }}>
             <img src={logo} alt="NUS GDG" width="100" />
