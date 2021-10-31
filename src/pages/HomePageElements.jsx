@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import banner from "../images/banner.png";
-import eventsIllustration from "../images/events_illustration.png";
-import gamesIllustration from "../images/games_illustration.png";
+// import eventsIllustration from "../images/events_illustration.png";
+// import gamesIllustration from "../images/games_illustration.png";
 import discordIllustration from "../images/discord_illustration.png";
 import discordLogo from "../images/discord.png";
 import * as Colors from "../constants/Colors";
