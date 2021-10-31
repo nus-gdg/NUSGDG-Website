@@ -7,7 +7,7 @@ export const StyledButton = styled.button`
   font-size: 1.5rem;
   font-weight: 500;
   padding: 0.3rem;
-  width: 15rem;
+  width: ${(props) => props.width};
   border: none;
   margin: 0.5rem;
 `;

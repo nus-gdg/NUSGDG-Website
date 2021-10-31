@@ -12,6 +12,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 2;
 `;
 
 export const LogoContainer = styled.div`
