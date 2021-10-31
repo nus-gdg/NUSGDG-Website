@@ -1,15 +1,8 @@
 import React from "react";
+import { FooterContainer } from "./FooterElements";
 
 function Footer() {
-  return (
-    <div className="footer">
-      <footer class="py-5 bg-dark fixed-bottom">
-        <div class="container">
-          <p class="m-0 text-center text-white">Copyright © NUS GDG 2021</p>
-        </div>
-      </footer>
-    </div>
-  );
+  return <FooterContainer>Copyright © nus-gdg.github.io 2021</FooterContainer>;
 }
 
 export default Footer;

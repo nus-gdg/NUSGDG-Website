@@ -1,52 +1,34 @@
-import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import React, { useState } from "react";
+import {
+  HeaderContainer,
+  LogoContainer,
+  LinksContainer,
+  LogoImage,
+  StyledLink,
+} from "./HeaderElements";
 import logo from "../images/nusgdg_white_text_transparent_bg.png";
 
-function Header(props) {
+function Header() {
   return (
-    <div className="navigation">
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <div class="container">
-          <Link class="navbar-brand" to="/" style={{ textDecoration: "none" }}>
-            <img src={logo} alt="NUS GDG" width="100" />
-          </Link>
-
-          <div>
-            <ul class="navbar-nav ml-auto">
-              <li
-                class={`nav-item  ${
-                  props.location.pathname === "/" ? "active" : ""
-                }`}
-              >
-                <Link class="nav-link" to="/">
-                  Home
-                  <span class="sr-only">(current)</span>
-                </Link>
-              </li>
-              <li
-                class={`nav-item  ${
-                  props.location.pathname === "/about" ? "active" : ""
-                }`}
-              >
-                <Link class="nav-link" to="/about">
-                  About
-                </Link>
-              </li>
-              <li
-                class={`nav-item  ${
-                  props.location.pathname === "/contact" ? "active" : ""
-                }`}
-              >
-                <Link class="nav-link" to="/contact">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <HeaderContainer>
+      <LogoContainer>
+        <StyledLink to="/" exact activeClassName="active">
+          <LogoImage src={logo} />
+        </StyledLink>
+      </LogoContainer>
+      <LinksContainer>
+        <StyledLink to="/about" exact activeClassName="active">
+          About
+        </StyledLink>
+        <StyledLink to="/events" exact activeClassName="active">
+          Events
+        </StyledLink>
+        <StyledLink to="/games" exact activeClassName="active">
+          Games
+        </StyledLink>
+      </LinksContainer>
+    </HeaderContainer>
   );
 }
 
-export default withRouter(Header);
+export default Header;

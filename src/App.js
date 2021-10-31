@@ -1,19 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Header, Footer, Home, About, Contact } from "./components";
+import { Header, Footer } from "./components";
+import { HomePage, AboutPage, EventsPage, GamesPage } from "./pages";
+
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Header />
-        <Switch>
-          <Route path="/" exact component={() => <Home />} />
-          <Route path="/about" exact component={() => <About />} />
-          <Route path="/contact" exact component={() => <Contact />} />
-        </Switch>
-        <Footer />
-      </Router>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/about" exact component={AboutPage} />
+        <Route path="/events" exact component={EventsPage} />
+        <Route path="/games" exact component={GamesPage} />
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 
