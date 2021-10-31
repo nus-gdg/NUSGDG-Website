@@ -9,14 +9,13 @@ import {
   GamesContainer,
   HomePageContainer,
   DiscordContainer,
-  DiscordIllustration,
   DiscordContent,
   DiscordLogo,
   DiscordTitle,
   DiscordIllustrationBox,
   DiscordIllustrationImage,
 } from "./HomePageElements";
-import { StyledButton } from "../constants/StyledButton";
+import { StyledButton, StyledTitle, StyledSubTitle } from "../custom";
 import * as Colors from "../constants/Colors";
 
 function HomePage() {
@@ -35,8 +34,20 @@ function HomePage() {
           </StyledButton>
         </BannerSection>
       </BannerContainer>
-      <EventsContainer></EventsContainer>
-      <GamesContainer></GamesContainer>
+      <EventsContainer>
+        <StyledTitle>Our Events</StyledTitle>
+        <StyledSubTitle>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </StyledSubTitle>
+      </EventsContainer>
+      <GamesContainer>
+        <StyledTitle>Our Games</StyledTitle>
+        <StyledSubTitle>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </StyledSubTitle>
+      </GamesContainer>
       <DiscordContainer>
         <DiscordIllustrationBox>
           <DiscordIllustrationImage />

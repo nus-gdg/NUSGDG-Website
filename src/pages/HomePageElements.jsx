@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import banner from "../images/banner.png";
-import discordIllustration from "../images/Saly-10.png";
+import eventsIllustration from "../images/events_illustration.png";
+import gamesIllustration from "../images/games_illustration.png";
+import discordIllustration from "../images/discord_illustration.png";
 import discordLogo from "../images/discord.png";
 import * as Colors from "../constants/Colors";
 
 export const HomePageContainer = styled.div`
-  background: pink;
   width: 100%;
   height: auto;
 `;
@@ -50,9 +51,15 @@ export const BannerSubTitle = styled.p`
   font-weight: 500;
 `;
 
-export const EventsContainer = styled.div``;
+export const EventsContainer = styled.div`
+  padding: 1rem 2rem;
+  height: 30rem; // todo
+`;
 
-export const GamesContainer = styled.div``;
+export const GamesContainer = styled.div`
+  padding: 1rem 2rem;
+  height: 30rem; // todo
+`;
 
 export const DiscordContainer = styled.div`
   background: ${Colors.DISCORD};

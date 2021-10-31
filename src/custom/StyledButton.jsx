@@ -11,3 +11,5 @@ export const StyledButton = styled.button`
   border: none;
   margin: 0.5rem;
 `;
+
+export default StyledButton;
