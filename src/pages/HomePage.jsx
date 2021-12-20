@@ -5,8 +5,6 @@ import {
   BannerSection,
   BannerSubTitle,
   BannerTitle,
-  EventsContainer,
-  GamesContainer,
   HomePageContainer,
   DiscordContainer,
   DiscordContent,
@@ -15,8 +13,11 @@ import {
   DiscordIllustrationBox,
   DiscordIllustrationImage,
 } from "./HomePageElements";
-import { StyledButton, StyledTitle, StyledSubTitle } from "../custom";
+import { StyledButton } from "../custom";
 import * as Colors from "../constants/Colors";
+import Events from "../components/Events/Events";
+import Games from "../components/Games/Games";
+import { gameData } from "../components/Games/data";
 
 function HomePage() {
   return (
@@ -34,20 +35,8 @@ function HomePage() {
           </StyledButton>
         </BannerSection>
       </BannerContainer>
-      <EventsContainer>
-        <StyledTitle>Our Events</StyledTitle>
-        <StyledSubTitle>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </StyledSubTitle>
-      </EventsContainer>
-      <GamesContainer>
-        <StyledTitle>Our Games</StyledTitle>
-        <StyledSubTitle>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </StyledSubTitle>
-      </GamesContainer>
+      <Events/>
+      <Games data={gameData}/>
       <DiscordContainer>
         <DiscordIllustrationBox>
           <DiscordIllustrationImage />

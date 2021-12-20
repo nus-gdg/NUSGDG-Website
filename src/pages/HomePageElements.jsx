@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import banner from "../images/banner.png";
-// import eventsIllustration from "../images/events_illustration.png";
-// import gamesIllustration from "../images/games_illustration.png";
 import discordIllustration from "../images/discord_illustration.png";
 import discordLogo from "../images/discord.png";
 import * as Colors from "../constants/Colors";
@@ -51,11 +49,6 @@ export const BannerSubTitle = styled.p`
   font-weight: 500;
 `;
 
-export const EventsContainer = styled.div`
-  padding: 1rem 2rem;
-  height: 30rem; // todo
-`;
-
 export const GamesContainer = styled.div`
   padding: 1rem 2rem;
   height: 30rem; // todo
@@ -78,7 +71,7 @@ export const DiscordIllustrationBox = styled.div`
   left: 5rem;
 `;
 
-export const DiscordIllustrationImage = styled.img`
+export const DiscordIllustrationImage = styled.div`
   width: 100%;
   height: 100%;
   background-image: url(${discordIllustration});
@@ -101,9 +94,10 @@ export const DiscordTitle = styled.p`
   margin: 0;
 `;
 
-export const DiscordLogo = styled.img`
+export const DiscordLogo = styled.div`
   background-image: url(${discordLogo});
-  background-size: cover;
-  width: 5rem;
+  background-size: contain;
   height: 5rem;
+  width: 5rem;
+  background-repeat: no-repeat;
 `;
