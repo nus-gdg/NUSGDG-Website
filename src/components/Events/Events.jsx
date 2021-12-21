@@ -20,8 +20,7 @@ function Events() {
             <EventsContainer>
                 <StyledTitle>Our Events</StyledTitle>
                 <StyledSubTitle>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Here are our upcoming events for the next 3-6 months.
                 </StyledSubTitle>
                 <UpperBox>
                     <EventBox>
@@ -43,7 +42,11 @@ function Events() {
                         <EventTitle>Event 4</EventTitle>
                     </EventBox>  
                 </LowerBox>
-                <StyledButton color={Colors.PURPLE_GRADIENT} width="45%">View More Events</StyledButton>  
+                <StyledButton color={Colors.PURPLE_GRADIENT} width="45%">
+                    <a href="https://www.instagram.com/nusgdg/?hl=en" target="_blank" rel="noreferrer noopener" style = {{'color':'white'}}>
+                        View More Events
+                    </a>
+                </StyledButton>  
             </EventsContainer>
             <EventIllustrationBox>
                 <EventIllustrationImage/>
