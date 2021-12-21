@@ -32,8 +32,9 @@ function AboutPage() {
         <AboutSectionText>
           <SectionTitle>About NUS GDG</SectionTitle>
           <SectionSubTitle>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          The National University of Singapore Games Development Group, 
+          also known as NUS GDG is a student interest group commited to raising community awareness about game development. 
+          We delve into depths of game making and seek to make game development an activity that everyone can enjoy.
           </SectionSubTitle>
         </AboutSectionText>
         <AboutSectionIllustration src={aboutIllustration} />
@@ -43,21 +44,16 @@ function AboutPage() {
         <WhatSectionText>
           <SectionTitle>What we do</SectionTitle>
           <SectionSubTitle>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+          We hold weekly sessions teaching students the basics on how to make games. 
+          We also hold GameCraft, an annual game jam, giving students the opportunities to collaborate and create a game in a week.
           </SectionSubTitle>
         </WhatSectionText>
       </WhatSection>
       <WhoSection>
         <SectionTitle>Who we are</SectionTitle>
         <SectionSubTitle>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Our motto is "Learn, Design, Create". 
+          We aim to help beginners kickstart their game development journey and provide a community for aspiring game developers to learn and connect with each other.
         </SectionSubTitle>
         <PersonContainers>
           {persons.map((person) => (

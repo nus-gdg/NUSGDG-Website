@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import banner from "../images/banner.png";
+import combined from "../images/Combined.gif";
 import discordIllustration from "../images/discord_illustration.png";
 import discordLogo from "../images/discord.png";
 import * as Colors from "../constants/Colors";
@@ -20,7 +20,7 @@ export const BannerContainer = styled.div`
 export const BannerImage = styled.img`
   width: 100%;
   height: 100%;
-  background-image: url(${banner});
+  background-image: url(${combined});
   background-size: cover;
 `;
 
