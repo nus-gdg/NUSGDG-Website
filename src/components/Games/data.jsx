@@ -1,7 +1,7 @@
-import kittenMitten from '../../images/kittenMitten.webm';
+import kittenMitten from '../../images/kittenMitten.gif';
 import memoryLanes from '../../images/memoryLanes.webm';
-import cogWerks from '../../images/cogWerks.webm';
-import victoria from '../../images/victoria.webm';
+import cogWerks from '../../images/cogWerks.gif';
+import victoria from '../../images/victoria.gif';
 import spaceSalaryMan from '../../images/spaceSalaryMan.webm';
 import moonChaser from '../../images/moonChaser.webm';
 

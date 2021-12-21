@@ -3,8 +3,7 @@ import eventsIllustration from "../../images/events_illustration.png";
 
 export const Container = styled.div`
     display: flex;
-    padding-top: 1rem;
-    padding-left: 2rem;
+    padding: 1rem 4rem;
     height: auto;
     justify-content: end;
 `;
@@ -14,20 +13,24 @@ export const EventsContainer = styled.div`
     flex-direction: column;
     align-items: center;  
     justify-content: start;
-    width: 50%;
+    width: 55%;
+    
+    @media screen and (max-width: 1350px) {
+        width: 100%;    
+    }
 `;
 
 export const UpperBox = styled.div`
     width: 100%;  
-    min-width: 300px;
     margin-bottom: 3rem;
 `;
 
 export const LowerBox = styled.div`
     width: 100%;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
+    justify-content: center;
+    grid-gap: 2rem;
     margin-bottom: 2rem; 
 `;
 
@@ -59,6 +62,10 @@ export const EventIllustrationBox = styled.div`
     position: relative;
     width: 40%;
     height: auto;
+
+    @media screen and (max-width: 1350px) {
+        display: none;   
+    }
 `;
 
 export const EventImage = styled.img`

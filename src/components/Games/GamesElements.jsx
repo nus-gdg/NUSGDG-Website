@@ -3,9 +3,8 @@ import gamesIllustration from "../../images/games_illustration.png";
 
 export const Container = styled.div`
     display: flex;
-    padding: 4rem 2rem 15rem 0rem;
+    padding: 5rem 4rem 15rem; 
     height: auto;  
-    justify-content: center;
 `;
 
 export const GamesContainer = styled.div`
@@ -13,22 +12,25 @@ export const GamesContainer = styled.div`
     flex-direction: column;
     align-items: center;
     width: 60%;
+
+    @media screen and (max-width: 1350px) {
+        width: 100%;    
+    }
 `;
 
 export const GameWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
     margin-bottom: 2rem;
-    gap: 40px;
+    grid-gap: 2rem;
+    justify-content: center;
 `;
 
 export const GameCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 200px;
-    max-width: 30%;
     cursor: pointer;
 `;
 
@@ -71,4 +73,8 @@ export const GameIllustrationImage = styled.div`
 export const GameIllustrationBox = styled.div`
     position: relative;
     width: 40%;
+
+    @media screen and (max-width: 1350px) {
+        display: none;
+    }
 `;

@@ -28,7 +28,7 @@ const Games = ({ data }) => {
                     {data.map((item, index) => {
                         return (
                             <GameCard key={index}>
-                                <GameImage src={item.img} alt={item.alt}/>
+                                <GameImage autoplay loop muted src={item.img} type='video/webm'/>
                                 <GameTitle>{item.title}</GameTitle>
                                 {/* <GameDescription>{item.desc}</GameDescription> */}
                             </GameCard>
