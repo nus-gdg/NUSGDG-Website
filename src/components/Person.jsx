@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  PersonBox,
+  PersonImage,
   PersonContainer,
   PersonLink,
   PersonLinks,
@@ -12,7 +12,7 @@ import {
 function Person(props) {
   return (
     <PersonContainer>
-      <PersonBox>{props.image}</PersonBox>
+      <PersonImage src={props.image}/>
       <PersonName>{props.name}</PersonName>
       <PersonRole>{props.role}</PersonRole>
       <PersonQuote>{props.quote}</PersonQuote>

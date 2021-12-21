@@ -42,7 +42,7 @@ export const WhatSection = styled.div`
   justify-content: center;
   width: 100%;
   height: auto;
-  margin: 5rem 0;
+  margin: 10rem 0;
 `;
 
 export const WhatSectionImg = styled.img`

@@ -63,6 +63,7 @@ function AboutPage() {
           {persons.map((person) => (
             <Person
               name={person.name}
+              image={person.image}
               role={person.role}
               quote={person.quote}
               linkedin={person.linkedin}

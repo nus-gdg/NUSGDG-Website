@@ -7,11 +7,10 @@ export const PersonContainer = styled.div`
   justify-content: center;
 `;
 
-export const PersonBox = styled.div`
+export const PersonImage = styled.img`
   width: 10rem;
   height: 10rem;
   border-radius: 100px;
-  background: grey;
 `;
 
 export const PersonName = styled.p`
