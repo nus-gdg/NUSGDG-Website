@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import eventsIllustration from "../../images/events_illustration.png";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import { Carousel } from 'react-responsive-carousel';
+
+
 
 export const Container = styled.div`
     display: flex;
@@ -23,6 +27,10 @@ export const EventsContainer = styled.div`
 export const UpperBox = styled.div`
     width: 100%;  
     margin-bottom: 3rem;
+
+    @media screen and (max-width: 1350px) {
+        display: none;
+    }
 `;
 
 export const LowerBox = styled.div`
@@ -32,6 +40,10 @@ export const LowerBox = styled.div`
     justify-content: center;
     grid-gap: 2rem;
     margin-bottom: 2rem; 
+
+    @media screen and (max-width: 1350px) {
+        display: none;
+    }
 `;
 
 export const EventBox = styled.div`
@@ -62,7 +74,8 @@ export const EventIllustrationBox = styled.div`
     position: relative;
     width: 40%;
     height: auto;
-
+    top: 8rem;
+    
     @media screen and (max-width: 1350px) {
         display: none;   
     }
@@ -78,6 +91,10 @@ export const EventImage = styled.img`
         transform: scale(1.05);
         box-shadow: rgb(0 0 0 / 50%) 0px 40px 50px -16px;
     }
+
+    @media screen and (max-width: 1350px) {
+        box-shadow: none;
+    }
 `;
 
 export const EventTitle = styled.div`
@@ -87,4 +104,14 @@ export const EventTitle = styled.div`
 export const Eclipse = styled.div`
     background-color: rgba(114, 136, 255, 0.49);
     filter: blur(228px);
+`;
+
+export const StyledCarousel = styled(Carousel)`
+    display: none;
+    width: 70%;
+    max-width: 800px;
+
+    @media screen and (max-width: 1350px) {
+        display: inline;
+    }
 `;

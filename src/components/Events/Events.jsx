@@ -11,7 +11,9 @@ import {
     EventIllustrationBox,
     EventIllustrationImage,
     EventTitle,
-    Eclipse
+    Eclipse,
+    StyledCarousel,
+    AltBox
 } from "./EventsElements";
 
 function Events() {
@@ -29,6 +31,24 @@ function Events() {
                         <EventTitle>Event 1</EventTitle>
                     </EventBox>
                 </UpperBox>
+                <StyledCarousel showArrows={false} autoPlay={true} showStatus={false} infiniteLoop={true}>
+                        <EventBox>
+                            <EventImage src="https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+                            <EventTitle>Event 1</EventTitle>
+                        </EventBox>  
+                        <EventBox>
+                            <EventImage src="https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+                            <EventTitle>Event 2</EventTitle>
+                        </EventBox>  
+                        <EventBox>
+                            <EventImage src="https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+                            <EventTitle>Event 3</EventTitle>
+                        </EventBox>  
+                        <EventBox>
+                            <EventImage src="https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+                            <EventTitle>Event 4</EventTitle>
+                        </EventBox> 
+                </StyledCarousel>
                 <LowerBox>
                     <EventBox>
                         <EventImage src="https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
@@ -41,8 +61,9 @@ function Events() {
                     <EventBox>
                         <EventImage src="https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
                         <EventTitle>Event 4</EventTitle>
-                    </EventBox>  
+                    </EventBox>
                 </LowerBox>
+                
                 <StyledButton color={Colors.PURPLE_GRADIENT} width="45%">View More Events</StyledButton>  
             </EventsContainer>
             <EventIllustrationBox>

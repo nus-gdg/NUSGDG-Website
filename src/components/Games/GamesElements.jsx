@@ -24,7 +24,7 @@ export const GameWrapper = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
     margin-bottom: 2rem;
     grid-gap: 2rem;
-    justify-content: center;
+    justify-content: space-around;
 `;
 
 export const GameCard = styled.div`
