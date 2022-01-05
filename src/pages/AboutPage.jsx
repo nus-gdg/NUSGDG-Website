@@ -71,13 +71,6 @@ function AboutPage() {
             />
           ))}
         </PersonContainers>
-        <SectionSubTitle>
-          Near the start of each calendar year, we also run <b>Hack&Roll</b>,
-          the largest student-run hackathon in Singapore. <b>Hack&Roll</b> is
-          unique for being one of the few hackathons, if not the only, that do
-          not have a set topic for participants; instead, the aim is to simply
-          encourage people to come and have fun building something.
-        </SectionSubTitle>
       </WhoSection>
       <BottomSection>
         <BottomSectionImg src={bottomWave} />
